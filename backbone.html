@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Learning Backbone</title>
+		<meta name="description" content="">
+		<meta name="author" content="Christopher Brown">
+	</head>
+	<body>
+		<div align="center">
+			<h1>My Tasks</h1>
+			<table>
+				<tr>
+					<td style="width:100%" colspan="4">
+						<form id="addTask" action="">
+							<input style="margin-left:1.5em" type="text" placeholder="Enter new task">
+							<input type="submit" class="" value="Add Task">
+						</form>	
+					</td>
+				</tr>
+					
+				<tr class="tasks">
+				</tr>
+				<script id="taskTemplate" type="text/template">
+					<td style="width:40%"><span> <%=title%> </span></td> <td style="width:10%"><button class="edit">Edit</button></td> <td style="width:10%"><button class="delete">Delete</button></td><td nowrap style="width:40%"><p>Date: <input class="datePicker" type="text"></p></td>
+				</script>
+			</table>
+		</div>
+		<script type="text/javascript" src="js/underscore.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="js/backbone.js"></script>	
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/black-tie/jquery-ui.css" type="text/css">
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+		<script type="text/javascript" src="js/main.js"></script>
+		<script> 		
+			$(function(){ // page is loaded	
+				$('button').button();
+				$('input[type=submit]').button();
+				$(".datePicker").datepicker();
+			});
+		</script>
+	</body>
+
+	<script>
+
+	</script>
+
+</html>
+
